@@ -1,0 +1,25 @@
+model_config: configs/inference.yaml
+
+train_file: data/processed/customer_support/v2/sft/train.jsonl
+validation_file: data/processed/customer_support/v2/sft/validation.jsonl
+output_dir: outputs/customer_support/sft_v2_smoke
+
+seed: 42
+sample_count: 32
+max_seq_length: 512
+max_steps: 20
+batch_size: 1
+gradient_accumulation_steps: 4
+learning_rate: 0.0002
+max_grad_norm: 1.0
+gradient_checkpointing: true
+
+lora:
+  r: 8
+  lora_alpha: 16
+  lora_dropout: 0.05
+  target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+
+probe:
+  prompt: Where is order ORD-1234567890?
+  max_new_tokens: 96

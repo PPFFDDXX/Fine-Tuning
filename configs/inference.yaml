@@ -1,0 +1,16 @@
+model:
+  name_or_path: Qwen/Qwen2.5-1.5B-Instruct
+  cache_dir: models/huggingface
+  revision: 989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+  local_files_only: true
+  device: 0
+  compute_dtype: auto
+  trust_remote_code: false
+
+generation:
+  max_input_tokens: 2048
+  max_new_tokens: 256
+  do_sample: false
+  temperature: 0.7
+  top_p: 0.9
+  repetition_penalty: 1.0

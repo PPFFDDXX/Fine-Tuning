@@ -1,0 +1,1 @@
+Classify the English customer message. Allowed intents: cancel_order, change_order, track_order, get_refund, track_refund. Return only JSON with exactly two keys: "intent" and "order_id". order_id must be the exact explicitly stated order identifier, or null if absent. Never invent an identifier. Do not answer the customer request.

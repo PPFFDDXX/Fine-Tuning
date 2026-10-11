@@ -1,0 +1,12 @@
+{
+  "repo_id": "bitext/Bitext-customer-support-llm-chatbot-training-dataset",
+  "revision": "430d1a89bd93bd1fa23c16f29dd53e73f0087443",
+  "source_split": "train",
+  "language": "en",
+  "seed": 42,
+  "intents": ["cancel_order", "change_order", "track_order", "get_refund", "track_refund"],
+  "per_intent": {"train": 100, "validation": 20, "test": 20},
+  "refund_order_context_per_intent": {"train": 30, "validation": 10, "test": 10},
+  "near_duplicate_jaccard": 0.85,
+  "output_dir": "data/processed/customer_support/v2"
+}

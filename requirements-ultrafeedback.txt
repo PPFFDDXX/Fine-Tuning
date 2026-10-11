@@ -1,0 +1,12 @@
+# Reproduce the existing CUDA 12.8 training environment (Python 3.13).
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.8.0+cu128
+transformers==5.17.0
+peft==0.21.0
+bitsandbytes==0.50.2
+trl==1.13.0
+datasets==5.0.1
+accelerate==1.15.0
+huggingface-hub==1.31.0
+safetensors==0.8.0
+PyYAML==6.0.3

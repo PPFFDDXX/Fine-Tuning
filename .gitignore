@@ -1,0 +1,9 @@
+models/
+outputs/
+data/processed/customer_support/
+data/cache/
+data/external/
+**/__pycache__
+.vscode/
+
+.venv/
